@@ -18,15 +18,15 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import SearchIcon from "@material-ui/icons/Search";
-import { Markdown } from "@/components";
+import { Markdown } from "../components";
 import post1 from "@/assets/blog-post.1.md";
 import post2 from "@/assets/webpack.md";
 
 function MadeWithLove() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
+    <Typography variant='body2' color='textSecondary' align='center'>
       {"Built with love by the "}
-      <Link color="inherit" href="https://material-ui.com/">
+      <Link color='inherit' href='https://material-ui.com/'>
         Material-UI
       </Link>
       {" team."}
@@ -158,14 +158,14 @@ export default function Blog() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="lg">
+      <Container maxWidth='lg'>
         <Toolbar className={classes.toolbar}>
-          <Button size="small">Subscribe</Button>
+          <Button size='small'>Subscribe</Button>
           <Typography
-            component="h2"
-            variant="h5"
-            color="inherit"
-            align="center"
+            component='h2'
+            variant='h5'
+            color='inherit'
+            align='center'
             noWrap
             className={classes.toolbarTitle}
           >
@@ -174,22 +174,22 @@ export default function Blog() {
           <IconButton>
             <SearchIcon />
           </IconButton>
-          <Button variant="outlined" size="small">
+          <Button variant='outlined' size='small'>
             Sign up
           </Button>
         </Toolbar>
         <Toolbar
-          component="nav"
-          variant="dense"
+          component='nav'
+          variant='dense'
           className={classes.toolbarSecondary}
         >
           {sections.map(section => (
             <Link
-              color="inherit"
+              color='inherit'
               noWrap
               key={section}
-              variant="body2"
-              href="#"
+              variant='body2'
+              href='#'
               className={classes.toolbarLink}
             >
               {section}
@@ -203,8 +203,8 @@ export default function Blog() {
             {
               <img
                 style={{ display: "none" }}
-                src="https://source.unsplash.com/user/erondu"
-                alt="background"
+                src='https://source.unsplash.com/user/erondu'
+                alt='background'
               />
             }
             <div className={classes.overlay} />
@@ -212,19 +212,19 @@ export default function Blog() {
               <Grid item md={6}>
                 <div className={classes.mainFeaturedPostContent}>
                   <Typography
-                    component="h1"
-                    variant="h3"
-                    color="inherit"
+                    component='h1'
+                    variant='h3'
+                    color='inherit'
                     gutterBottom
                   >
                     Title of a longer featured blog post
                   </Typography>
-                  <Typography variant="h5" color="inherit" paragraph>
+                  <Typography variant='h5' color='inherit' paragraph>
                     Multiple lines of text that form the lede, informing new
                     readers quickly and efficiently about what&apos;s most
                     interesting in this post&apos;s contents.
                   </Typography>
-                  <Link variant="subtitle1" href="#">
+                  <Link variant='subtitle1' href='#'>
                     Continue reading…
                   </Link>
                 </div>
@@ -236,20 +236,20 @@ export default function Blog() {
           <Grid container spacing={4} className={classes.cardGrid}>
             {featuredPosts.map(post => (
               <Grid item key={post.title} xs={12} md={6}>
-                <CardActionArea component="a" href="#">
+                <CardActionArea component='a' href='#'>
                   <Card className={classes.card}>
                     <div className={classes.cardDetails}>
                       <CardContent>
-                        <Typography component="h2" variant="h5">
+                        <Typography component='h2' variant='h5'>
                           {post.title}
                         </Typography>
-                        <Typography variant="subtitle1" color="textSecondary">
+                        <Typography variant='subtitle1' color='textSecondary'>
                           {post.date}
                         </Typography>
-                        <Typography variant="subtitle1" paragraph>
+                        <Typography variant='subtitle1' paragraph>
                           {post.description}
                         </Typography>
-                        <Typography variant="subtitle1" color="primary">
+                        <Typography variant='subtitle1' color='primary'>
                           Continue reading...
                         </Typography>
                       </CardContent>
@@ -257,8 +257,8 @@ export default function Blog() {
                     <Hidden xsDown>
                       <CardMedia
                         className={classes.cardMedia}
-                        image="https://source.unsplash.com/random"
-                        title="Image title"
+                        image='https://source.unsplash.com/random'
+                        title='Image title'
                       />
                     </Hidden>
                   </Card>
@@ -270,7 +270,7 @@ export default function Blog() {
           <Grid container spacing={5} className={classes.mainGrid}>
             {/* Main content */}
             <Grid item xs={12} md={8}>
-              <Typography variant="h6" gutterBottom>
+              <Typography variant='h6' gutterBottom>
                 From the Firehose
               </Typography>
               <Divider />
@@ -287,7 +287,7 @@ export default function Blog() {
             {/* Sidebar */}
             <Grid item xs={12} md={4}>
               <Paper elevation={0} className={classes.sidebarAboutBox}>
-                <Typography variant="h6" gutterBottom>
+                <Typography variant='h6' gutterBottom>
                   About
                 </Typography>
                 <Typography>
@@ -297,26 +297,26 @@ export default function Blog() {
                 </Typography>
               </Paper>
               <Typography
-                variant="h6"
+                variant='h6'
                 gutterBottom
                 className={classes.sidebarSection}
               >
                 Archives
               </Typography>
               {archives.map(archive => (
-                <Link display="block" variant="body1" href="#" key={archive}>
+                <Link display='block' variant='body1' href='#' key={archive}>
                   {archive}
                 </Link>
               ))}
               <Typography
-                variant="h6"
+                variant='h6'
                 gutterBottom
                 className={classes.sidebarSection}
               >
                 Social
               </Typography>
               {social.map(network => (
-                <Link display="block" variant="body1" href="#" key={network}>
+                <Link display='block' variant='body1' href='#' key={network}>
                   {network}
                 </Link>
               ))}
@@ -327,15 +327,15 @@ export default function Blog() {
       </Container>
       {/* Footer */}
       <footer className={classes.footer}>
-        <Container maxWidth="lg">
-          <Typography variant="h6" align="center" gutterBottom>
+        <Container maxWidth='lg'>
+          <Typography variant='h6' align='center' gutterBottom>
             Footer
           </Typography>
           <Typography
-            variant="subtitle1"
-            align="center"
-            color="textSecondary"
-            component="p"
+            variant='subtitle1'
+            align='center'
+            color='textSecondary'
+            component='p'
           >
             Something here to give the footer a purpose!
           </Typography>

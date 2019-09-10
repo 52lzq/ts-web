@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   CssBaseline,
   Toolbar,
@@ -15,20 +15,18 @@ import {
   Divider,
   Container,
   CardMedia
-} from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import SearchIcon from "@material-ui/icons/Search";
-import { Markdown } from "@components";
-import { blog, webpack } from "@assets";
+} from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import SearchIcon from '@material-ui/icons/Search';
 
 function MadeWithLove() {
   return (
     <Typography variant='body2' color='textSecondary' align='center'>
-      {"Built with love by the "}
+      {'Built with love by the '}
       <Link color='inherit' href='https://material-ui.com/'>
         Material-UI
       </Link>
-      {" team."}
+      {' team.'}
     </Typography>
   );
 }
@@ -41,35 +39,35 @@ const useStyles = makeStyles(theme => ({
     flex: 1
   },
   toolbarSecondary: {
-    justifyContent: "space-between",
-    overflowX: "auto"
+    justifyContent: 'space-between',
+    overflowX: 'auto'
   },
   toolbarLink: {
     padding: theme.spacing(1),
     flexShrink: 0
   },
   mainFeaturedPost: {
-    position: "relative",
+    position: 'relative',
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,
     marginBottom: theme.spacing(4),
-    backgroundImage: "url(https://source.unsplash.com/user/erondu)",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center"
+    backgroundImage: 'url(https://source.unsplash.com/user/erondu)',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center'
   },
   overlay: {
-    position: "absolute",
+    position: 'absolute',
     top: 0,
     bottom: 0,
     right: 0,
     left: 0,
-    backgroundColor: "rgba(0,0,0,.3)"
+    backgroundColor: 'rgba(0,0,0,.3)'
   },
   mainFeaturedPostContent: {
-    position: "relative",
+    position: 'relative',
     padding: theme.spacing(3),
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up('md')]: {
       padding: theme.spacing(6),
       paddingRight: 0
     }
@@ -78,7 +76,7 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(3)
   },
   card: {
-    display: "flex"
+    display: 'flex'
   },
   cardDetails: {
     flex: 1
@@ -105,51 +103,51 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const sections = [
-  "Technology",
-  "Design",
-  "Culture",
-  "Business",
-  "Politics",
-  "Opinion",
-  "Science",
-  "Health",
-  "Style",
-  "Travel"
+  'Technology',
+  'Design',
+  'Culture',
+  'Business',
+  'Politics',
+  'Opinion',
+  'Science',
+  'Health',
+  'Style',
+  'Travel'
 ];
 
 const featuredPosts = [
   {
-    title: "Featured post",
-    date: "Nov 12",
+    title: 'Featured post',
+    date: 'Nov 12',
     description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content."
+      'This is a wider card with supporting text below as a natural lead-in to additional content.'
   },
   {
-    title: "Post title",
-    date: "Nov 11",
+    title: 'Post title',
+    date: 'Nov 11',
     description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content."
+      'This is a wider card with supporting text below as a natural lead-in to additional content.'
   }
 ];
 
-const posts = [webpack, blog];
+// const posts = [webpack, blog];
 
 const archives = [
-  "March 2020",
-  "February 2020",
-  "January 2020",
-  "December 2019",
-  "November 2019",
-  "October 2019",
-  "September 2019",
-  "August 2019",
-  "July 2019",
-  "June 2019",
-  "May 2019",
-  "April 2019"
+  'March 2020',
+  'February 2020',
+  'January 2020',
+  'December 2019',
+  'November 2019',
+  'October 2019',
+  'September 2019',
+  'August 2019',
+  'July 2019',
+  'June 2019',
+  'May 2019',
+  'April 2019'
 ];
 
-const social = ["GitHub", "Twitter", "Facebook"];
+const social = ['GitHub', 'Twitter', 'Facebook'];
 
 export default function Blog() {
   const classes = useStyles();
@@ -201,7 +199,7 @@ export default function Blog() {
             {/* Increase the priority of the hero background image */}
             {
               <img
-                style={{ display: "none" }}
+                style={{ display: 'none' }}
                 src='https://source.unsplash.com/user/erondu'
                 alt='background'
               />
@@ -277,14 +275,14 @@ export default function Blog() {
                 From the Firehose
               </Typography>
               <Divider />
-              {posts.map(post => (
+              {/* {posts.map(post => (
                 <Markdown
                   className={classes.markdown}
                   key={post.substring(0, 40)}
                 >
                   {post}
                 </Markdown>
-              ))}
+              ))} */}
             </Grid>
             {/* End main content */}
             {/* Sidebar */}

@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
 import ProTip from './ProTip';
-import { Header, Paper } from '@/components';
+// import { Header, Paper } from './components';
 function Copyright() {
   return (
     <Typography variant='body2' color='textSecondary' align='center'>
@@ -24,7 +24,7 @@ function Copyright() {
 export default function App() {
   return (
     <Container maxWidth='sm'>
-      <Header />
+      {/* <Header /> */}
       <Box my={4}>
         <Typography variant='h4' component='h1' gutterBottom>
           Create Reactsfsf 2App v4-beta example with TypeScript
